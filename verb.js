@@ -12,8 +12,10 @@ const resultDisplay = document.getElementById('result');
 // Assigned to this variable (possibleChoices) is the document.querySelectorAll method.  This method finds a list of elements that match the CSS selector that I specified.  I use this because I want everything in my HTML that is a button element.  Since I'm only using three buttons, it appropriate to use this otherwise if I were to have more than three buttons, I could give my buttons a className for each one.
 const possibleChoices = document.querySelectorAll('button');
 
-// Create a global variable named "userChoice". This will allow me to access this variable wherever and use it in my JS file. I didn't assigned a value to this variable.
+// Create three global variable, one named "userChoice", second variable named computerChoice; and third variable named result. This will allow me to access this variable wherever and use it in my JS file. I didn't assigned a value to this variable.
 let userChoice;
+let computerChoice;
+let result;
 
 // I'm going to grab my "possibleChoices" variable and use the forEach() method.
 // This forEach() method will pass a function and take a parameter named "possibleChoice". When I call the forEach() method, this function will be executed for each button.
